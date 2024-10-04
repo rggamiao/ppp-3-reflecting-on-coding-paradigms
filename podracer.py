@@ -29,13 +29,22 @@ class SebulbasPod(Podracer):
   def flame_jet(self,other):
     other.condition = "trashed"
 
-'''
-Make sure to answer the following prompts about your coding experience:
 
-How does this solution demonstrate the four pillars of OOP? (It may not demonstrate all of them, describe only those that apply)
+##  Make sure to answer the following prompts about your coding experience:
 
-Would it have been easier to implement a solution to this problem using a different coding style? Why or why not?
+## 1. How does this solution demonstrate the four pillars of OOP? (It may not demonstrate all of them, describe only those that apply)
 
-How in particular did Object Oriented Programming assist in the solving of this problem?
+# Encapsulation. Max_speed, condition and price are encapsulated within the class. Repair () is then used to modify the state. Inheritance: AnakinsPod and SebulbasPod inherit from the Podracer class. Abstraction: The class contains the code needed for the other podracers to inherit. Polymorphism: I don't see any polymorphism here but it can be used. 
 
-'''
+
+
+
+## 2. Would it have been easier to implement a solution to this problem using a different coding style? Why or why not?
+
+# No, OOP makes the integration of new podracers streamlined. All I have to do is have the new podracers inherit the class and that's that!
+
+## 3. How in particular did Object Oriented Programming assist in the solving of this problem?
+
+# The structure used in the class provided the framework for the other podracers. The interactions seen using repair () can be modified, making for a quick and easy fix when certain podracers need editing. This approach makes for the generation of new objects easy and fast. 
+
+

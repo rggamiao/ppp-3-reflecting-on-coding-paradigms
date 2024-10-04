@@ -1,4 +1,6 @@
-
-    flattened = reduce(lambda x, y: x + y, arr)
-  
-    return sorted(flattened)
+def flatten_and_sort(array):
+    arr = []
+    for item in array:
+        for i in item:
+            arr.append(i)
+    return sorted(arr)
